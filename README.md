@@ -2,6 +2,10 @@
 
 A collection of plugins for **[Tidal Luna](https://github.com/Inrixia/TidaLuna)** by vMohammad.
 
+# Depreciation Notice
+
+This repository is now deprecated. If you use any of the plugins and reupload them as your own, please give proper credit to the original author (me) and link back to this repository.
+
 ## Plugins
 
 ### @vmohammad/betterFullscreen
