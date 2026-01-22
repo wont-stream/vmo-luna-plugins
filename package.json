@@ -1,6 +1,6 @@
 {
 	"name": "@vmohammad/plugins",
-	"description": "A collection of plugins for TidaLuna made by vMohammad",
+	"description": "A collection of plugins for TidaLuna made by vMohammad (Deprecated)",
 	"type": "module",
 	"author": "vMohammad",
 	"scripts": {
