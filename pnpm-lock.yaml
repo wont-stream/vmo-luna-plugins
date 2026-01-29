@@ -50,7 +50,7 @@ importers:
         version: 14.1.1
       luna:
         specifier: github:Inrixia/TidaLuna
-        version: https://codeload.github.com/Inrixia/TidaLuna/tar.gz/23397079d05718009ea93adb2960e9df0440a882
+        version: https://codeload.github.com/Inrixia/TidaLuna/tar.gz/09538ef8ef8c90d0bdf32ab1577cb7abedd9f2b5
       oby:
         specifier: ^15.1.2
         version: 15.1.2
@@ -910,9 +910,9 @@ packages:
     resolution: {integrity: sha512-vFrFJkWtJvJnD5hg+hJvVE8Lh/TcMzKnTgCWmtBipwI5yLX/iX+5UB2tfuyODF5E7k9xEzMdYgGqaSb1c0c5Yw==}
     engines: {node: 20 || >=22}
 
-  luna@https://codeload.github.com/Inrixia/TidaLuna/tar.gz/23397079d05718009ea93adb2960e9df0440a882:
-    resolution: {tarball: https://codeload.github.com/Inrixia/TidaLuna/tar.gz/23397079d05718009ea93adb2960e9df0440a882}
-    version: 1.9.15-beta
+  luna@https://codeload.github.com/Inrixia/TidaLuna/tar.gz/09538ef8ef8c90d0bdf32ab1577cb7abedd9f2b5:
+    resolution: {tarball: https://codeload.github.com/Inrixia/TidaLuna/tar.gz/09538ef8ef8c90d0bdf32ab1577cb7abedd9f2b5}
+    version: 1.9.16-beta
 
   matcher@3.0.0:
     resolution: {integrity: sha512-OkeDaAZ/bQCxeFAozM55PKcKU0yJMPGifLwV4Qgjitu+5MoAfSQN4lsLJeXZ1b8w0x+/Emda6MZgXS1jvsapng==}
@@ -2130,7 +2130,7 @@ snapshots:
 
   lru-cache@11.2.5: {}
 
-  luna@https://codeload.github.com/Inrixia/TidaLuna/tar.gz/23397079d05718009ea93adb2960e9df0440a882:
+  luna@https://codeload.github.com/Inrixia/TidaLuna/tar.gz/09538ef8ef8c90d0bdf32ab1577cb7abedd9f2b5:
     dependencies:
       '@inrixia/helpers': 3.21.2
       '@types/clean-css': 4.2.11

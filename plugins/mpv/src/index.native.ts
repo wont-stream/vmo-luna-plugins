@@ -1,11 +1,12 @@
+import { exec } from 'node:child_process';
+import { rm } from 'node:fs/promises';
+import { createServer, type IncomingMessage, type Server, type ServerResponse } from "node:http";
+import { pid } from "node:process";
+import { promisify } from 'node:util';
 import { fetchMediaItemStream } from "@luna/lib.native";
-import { exec } from 'child_process';
 import { app, BrowserWindow } from "electron";
-import { rm } from 'fs/promises';
-import { createServer, IncomingMessage, Server, ServerResponse } from "http";
 import MpvAPI from 'node-mpv';
-import { pid } from "process";
-import { promisify } from 'util';
+
 const execAsync = promisify(exec);
 
 let server: Server | null = null;
@@ -68,7 +69,7 @@ async function startServer(port?: number): Promise<number> {
     server = createServer(handleRequest);
     server.listen(port ?? 0);
     const addrInfo = server.address();
-    return typeof addrInfo === 'object' ? addrInfo?.port || 0 : Number.parseInt(addrInfo.split(':')[1]) || 0;
+    return typeof addrInfo === 'object' ? addrInfo?.port || 0 : Number.parseInt(addrInfo.split(':')[1], 10) || 0;
 }
 
 function stopServer() {
@@ -104,7 +105,7 @@ function handleRequest(req: IncomingMessage, res: ServerResponse) {
 }
 
 async function handleStream(req: IncomingMessage, res: ServerResponse) {
-    const trackId = Number.parseInt(req.url?.split("/")[2] || "");
+    const trackId = Number.parseInt(req.url?.split("/")[2] || "", 10);
     if (!trackId) {
         res.statusCode = 400;
         res.end("Track ID is required");
