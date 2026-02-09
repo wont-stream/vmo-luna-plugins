@@ -1,7 +1,8 @@
 {
-	"extends": "luna/tsconfig.json",
-	"compilerOptions": {
-		"ignoreDeprecations": "6.0",
-		"types": ["node"]
-	}
+  "extends": "luna/tsconfig.json",
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "types": ["node"],
+    "jsx": "react-jsx",
+  },
 }
